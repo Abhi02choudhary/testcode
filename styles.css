@@ -1,0 +1,41 @@
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+  background-color: rgb(56, 54, 52);
+}
+.leftPart {
+  flex-basis: 50%;
+  background-color: rgb(139, 153, 141);
+  height: 100vh;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.content {
+  flex-grow: 1;
+  background-color: rgb(178, 205, 145);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.rightPart {
+  flex-basis: 50%;
+  background-color: rgb(222, 218, 218);
+  height: 100vh;
+  overflow: hidden;
+  color: black;
+}
+.leftPart .content textarea {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: none;
+  overflow: auto;
+}
